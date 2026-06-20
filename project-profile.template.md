@@ -76,9 +76,9 @@ Map each **functional team / workstream** (the section names your weekly reports
 
 **Active team list:** <list the functional team names your weekly reports currently use>.
 
-**Exclusions** (work types to drop entirely, not place or flag): <e.g. personal speaking-engagement decks; cross-project items belonging to a different project>.
+**Exclusions** (work types to drop entirely, not place or flag): <e.g. personal speaking-engagement decks unrelated to project deliverables>. *Do not list cross-project work here* — that is handled separately below so it **surfaces for review** rather than being silently dropped.
 
-**Cross-project handling:** items belonging to a *different* project surface under **"Misaligned / For Review"**, excluded from this project's totals.
+**Cross-project handling:** items belonging to a *different* project surface under **"Misaligned / For Review"** (not Exclusions), and are excluded from this project's totals there.
 
 ---
 

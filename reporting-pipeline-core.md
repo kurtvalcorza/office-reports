@@ -120,13 +120,15 @@ Same shape at monthly / quarterly / annual / terminal. **The Activity is the sec
 
 **Project Management** is a standalone section *parallel to the objectives* (not an Activity) — project overhead that no Activity covers. Activities with no work get `_(No accomplishments reported this period)_` and no sub-heads. Order teams within an Activity by volume of work.
 
-**Separate compliance/tag output** (the bridge to higher stages), one row per tagged accomplishment:
+**Separate compliance/tag output** (the bridge to higher stages), one row per tagged accomplishment. **Carry `source` (and, when rolling up, `period`) in the table** — §4 marks both as used in every record, and roll-ups need them to audit provenance and distinguish duplicate-looking accomplishments without going back to the narratives:
 
 ```markdown
-| Activity | Accomplishment | Indicator | MOV (evidence) | Output |
-|---|---|---|---|---|
-| A4 | Delivered an [X] training for [audience] | A4-IND2 | registry — attendance + certificates | People (event) |
+| Activity | Accomplishment | Indicator | MOV (evidence) | Output | Source |
+|---|---|---|---|---|---|
+| A4 | Delivered an [X] training for [audience] | A4-IND2 | registry — attendance + certificates | People (event) | wk 2026-03-13 |
 ```
+
+The report's `period` is fixed by its window (title/frontmatter), so the monthly table needs only a `source` column (the originating weekly). **When rolling up, widen `source` to the child periods** — e.g. add a `Months` column at the quarterly stage (`Jan·Feb·Mar`) and a `Quarters` column at the annual stage — so each higher stage can trace and de-duplicate by where the work came from.
 
 …followed by the **output tally** block (categories and targets from profile §C). For any output your profile flags as *manually tracked* (e.g. headcounts kept outside the report), list the event/indicator only — do not compute the figure.
 
